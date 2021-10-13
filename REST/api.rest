@@ -1,0 +1,61 @@
+### signUp
+POST http://localhost:4000/signup
+Content-Type: application/json
+
+{
+    "name":"Piyush",
+    "email": "910p@kgf.com",
+    "password": "Abcd@1234",
+    "confirmPassword": "Abcd@1234"
+}
+
+### login
+POST http://localhost:4000/login
+Content-Type: application/json
+
+{
+    "email": "910p@kgf.com",
+    "password": "Abcd@1234"
+}
+
+### add Todo
+POST http://localhost:4000/todos
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI4OGYwNDRkNy0wYTMxLTRlZjQtOWMwNi05NmEzOWZiZjc5NTEiLCJlbWFpbCI6IjkxMHBAa2dmLmNvbSIsIm5hbWUiOiJQaXl1c2giLCJpYXQiOjE2MzQwNzM4ODgsImV4cCI6MTYzNDY3ODY4OH0.F4RFkT-L4H7P5fCMgjNOLFYdF7il_64RQ2S-5DsIxP0
+Content-Type: application/json
+
+{
+    "todo": "Backend",
+    "description": "Express and postgres"
+}
+
+### get All Todos 
+
+GET http://localhost:4000/todos
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI4OGYwNDRkNy0wYTMxLTRlZjQtOWMwNi05NmEzOWZiZjc5NTEiLCJlbWFpbCI6IjkxMHBAa2dmLmNvbSIsIm5hbWUiOiJQaXl1c2giLCJpYXQiOjE2MzQwNzM4ODgsImV4cCI6MTYzNDY3ODY4OH0.F4RFkT-L4H7P5fCMgjNOLFYdF7il_64RQ2S-5DsIxP0
+Content-Type: application/json
+
+
+
+### Update Todo
+
+PUT http://localhost:4000/todos/4b739545-3410-408d-aa62-76cf40910f55
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI4OGYwNDRkNy0wYTMxLTRlZjQtOWMwNi05NmEzOWZiZjc5NTEiLCJlbWFpbCI6IjkxMHBAa2dmLmNvbSIsIm5hbWUiOiJQaXl1c2giLCJpYXQiOjE2MzQwNzM4ODgsImV4cCI6MTYzNDY3ODY4OH0.F4RFkT-L4H7P5fCMgjNOLFYdF7il_64RQ2S-5DsIxP0
+Content-Type: application/json
+
+{
+    "todo": "Frontend"
+}
+
+### Delete Todo 
+
+DELETE http://localhost:4000/todos/b9006e3b-34d4-41df-948a-45b925f8d86c
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI4OGYwNDRkNy0wYTMxLTRlZjQtOWMwNi05NmEzOWZiZjc5NTEiLCJlbWFpbCI6IjkxMHBAa2dmLmNvbSIsIm5hbWUiOiJQaXl1c2giLCJpYXQiOjE2MzQwNzM4ODgsImV4cCI6MTYzNDY3ODY4OH0.F4RFkT-L4H7P5fCMgjNOLFYdF7il_64RQ2S-5DsIxP0
+Content-Type: application/json
+
+
+
+### get Todo by id 
+
+GET http://localhost:4000/todos/4b739545-3410-408d-aa62-76cf40910f55
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI4OGYwNDRkNy0wYTMxLTRlZjQtOWMwNi05NmEzOWZiZjc5NTEiLCJlbWFpbCI6IjkxMHBAa2dmLmNvbSIsIm5hbWUiOiJQaXl1c2giLCJpYXQiOjE2MzQwNzM4ODgsImV4cCI6MTYzNDY3ODY4OH0.F4RFkT-L4H7P5fCMgjNOLFYdF7il_64RQ2S-5DsIxP0
+Content-Type: application/json
